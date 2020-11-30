@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace idade
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nome1, nome2;
+            int idade1, idade2;
+
+            for (int i = 0; i < 3; i++)
+            Console.WriteLine("Digite o nome do primeiro usuário: ");
+            nome1 = Console.ReadLine();
+            Console.WriteLine("Digite a idade: ");
+            idade1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o nome do segundo usuário: ");
+            nome2 = Console.ReadLine();
+            Console.WriteLine("Digite a idade: ");
+            idade2 = int.Parse(Console.ReadLine());
+            
+            if (idade1 > idade2){
+                Console.WriteLine("A Pessoa mais velha é: " + nome1);
+                Console.WriteLine("e a sua idade é: " +idade1);
+            }else{
+                Console.WriteLine("A pessoa mais velha é: " +nome2);
+                Console.WriteLine("e a sua idade é: " +idade2);
+        }
+            
+            Console.ReadKey();
+            
+        }
+    }
+}
